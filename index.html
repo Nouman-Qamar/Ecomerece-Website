@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanTrends - Adorable E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <p>Free shipping on all orders over $50!</p>
+                <div class="user-actions">
+                    <a href="#"><i class="fas fa-user"></i> Login</a>
+                    <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo">OceanTrends</div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Find your perfect match">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about-us.html">About-Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart-Items</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Dive into Style</h1>
+                <h2>SUMMER COLLECTION</h2>
+                <p>Starting at $19.99</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="container">
+                <h2>About OceanTrends</h2>
+                <p>At OceanTrends, we're passionate about bringing you the latest in beach-inspired fashion and accessories. Our curated collection combines comfort, style, and a love for the ocean, ensuring you look and feel great whether you're by the shore or in the city.</p>
+                <a href="#" class="learn-more-btn">Learn More About Us</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid" id="featuredProducts">
+                    <div class="product-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic-QRrTN7vsSYZAXNY9SDmb8OG16c6SZh.webp" alt="Stylish Sunglasses">
+                        <div class="product-info">
+                            <h3>Stylish Sunglasses</h3>
+                            <p class="price">$24.99</p>
+                            <button onclick="addToCart(1)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic-QRrTN7vsSYZAXNY9SDmb8OG16c6SZh.webp" alt="Beach Tote Bag">
+                        <div class="product-info">
+                            <h3>Beach Tote Bag</h3>
+                            <p class="price">$39.99</p>
+                            <button onclick="addToCart(2)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic-QRrTN7vsSYZAXNY9SDmb8OG16c6SZh.webp" alt="Flip Flops">
+                        <div class="product-info">
+                            <h3>Comfy Flip Flops</h3>
+                            <p class="price">$19.99</p>
+                            <button onclick="addToCart(3)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pic-QRrTN7vsSYZAXNY9SDmb8OG16c6SZh.webp" alt="Beach Hat">
+                        <div class="product-info">
+                            <h3>Chic Beach Hat</h3>
+                            <p class="price">$29.99</p>
+                            <button onclick="addToCart(4)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Why Choose Us</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-ship"></i>
+                        <h3>Free Shipping</h3>
+                        <p>On orders over $50</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-undo"></i>
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Secure Payments</h3>
+                        <p>100% secure checkout</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Always here to help</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>OceanTrends</h3>
+                    <p>Your one-stop shop for beach-inspired fashion and accessories.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and updates!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OceanTrends. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
