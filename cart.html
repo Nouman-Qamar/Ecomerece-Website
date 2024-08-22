@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart - OceanTrends</title>
+    <title>Your Shopping Cart | Mega-Mart Online</title>
+    <meta name="description" content="Review and manage your shopping cart at Mega-Mart Online. Enjoy free shipping on orders over $50 and secure checkout for all your favorite products.">
+    <meta name="keywords" content="Mega-Mart Online, shopping cart, checkout, free shipping, online shopping">
+    <link rel="canonical" href="https://www.megamartonline.com/cart.html">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:title" content="Your Shopping Cart | Mega-Mart Online">
+    <meta property="og:description" content="Review and manage your shopping cart at Mega-Mart Online. Enjoy free shipping on orders over $50 and secure checkout.">
+    <meta property="og:image" content="https://www.megamartonline.com/images/cart-banner.jpg">
+    <meta property="og:url" content="https://www.megamartonline.com/cart.html">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Shopping Cart",
+      "description": "Review and manage your shopping cart at Mega-Mart Online.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Mega-Mart Online"
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -14,25 +35,24 @@
             <div class="container">
                 <p>Free shipping on all orders over $50!</p>
                 <div class="user-actions">
-                    <a href="#"><i class="fas fa-user"></i> Login</a>
-                    <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
-                    <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                    <a href="login.html" aria-label="Login to your account"><i class="fas fa-user"></i> Log-In/Sign-Up</a>
+                    <a href="cart.html" aria-label="View your shopping cart"><i class="fas fa-shopping-cart"></i> Cart</a>
                 </div>
             </div>
         </div>
         <nav class="main-nav">
             <div class="container">
-                <div class="logo">OceanTrends</div>
+                <div class="logo">Mega-Mart Trends</div>
                 <div class="search-bar">
                     <input type="text" placeholder="Find your perfect match">
                     <button><i class="fas fa-search"></i></button>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about-us.html">About-Us</a></li>
+                    <li><a href="about-us.html">About</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cart.html">Cart-Items</a></li>
+                   
                     
                 </ul>
             </div>
@@ -42,7 +62,7 @@
     <main>
         <section class="cart-page">
             <div class="container">
-                <h1>Your Cart</h1>
+                <h1>Your Shopping Cart</h1>
                 <div class="cart-content">
                     <div class="cart-items" id="cartItems">
                         <!-- Cart items will be dynamically added here -->
@@ -72,14 +92,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>OceanTrends</h3>
+                    <h3>MegaMart Online Trends</h3>
                     <p>Your one-stop shop for beach-inspired fashion and accessories.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">FAQs</a></li>
                         <li><a href="#">Shipping</a></li>
                     </ul>
@@ -103,7 +123,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 OceanTrends. All rights reserved.</p>
+                <p>&copy; 2024 Mega-Mart Online. All rights reserved.</p>
             </div>
         </div>
     </footer>
