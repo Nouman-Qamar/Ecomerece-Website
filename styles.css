@@ -346,6 +346,81 @@ a {
     color: inherit;
 }
 
+/* Login and Signup Styles */
+.auth-section {
+    background-color: var(--light-sea);
+    padding: 60px 0;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+}
+
+.auth-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.auth-container h1 {
+    text-align: center;
+    color: var(--deep-sea);
+    margin-bottom: 30px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-button {
+    background-color: var(--coral);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #FF6347;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-switch a {
+    color: var(--deep-sea);
+    font-weight: 600;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
 /* Header Styles */
 header {
     background-color: var(--deep-sea);
