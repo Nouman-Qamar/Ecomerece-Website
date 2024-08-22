@@ -1,6 +1,6 @@
 
 
-/* Existing CSS code... */
+
 
 /* About Us Page Styles */
 .about-us-page {
@@ -571,38 +571,79 @@ header {
     transform: translateY(-3px);
 }
 
-/* About Us Section */
-.about-us {
-    background-color: var(--light-sea);
-    padding: 60px 0;
-    text-align: center;
+/* About Us Page Styles */
+.about-hero {
+    background-image: url('https://source.unsplash.com/1600x900/?ecommerce,technology');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.about-us h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: var(--deep-sea);
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.about-us p {
-    max-width: 800px;
-    margin: 0 auto 30px;
-    font-size: 18px;
-}
-
-.learn-more-btn {
-    display: inline-block;
-    background-color: var(--deep-sea);
+.about-hero h1 {
+    font-size: 4rem;
     color: var(--white);
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.learn-more-btn:hover {
-    background-color: #005275;
-    transform: translateY(-3px);
+.about-content {
+    padding: 60px 0;
+    background-color: #FFF5F5;
+}
+
+.about-intro {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+
+    .about-intro {
+        font-size: 1.2rem;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Featured Products Section */
