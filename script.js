@@ -75,3 +75,51 @@ function addToCart(productId) {
     console.log(`Product ${productId} added to cart`);
     // Implement cart functionality here
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', handleLogin);
+    }
+
+    if (signupForm) {
+        signupForm.addEventListener('submit', handleSignup);
+    }
+});
+
+function handleLogin(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    // Here you would typically send a request to your server to authenticate the user
+    console.log('Login attempt:', { email, password });
+
+    // For demonstration purposes, we'll just log the user in
+    alert('Login successful!');
+    // Redirect to home page or dashboard
+    window.location.href = 'index.html';
+}
+
+function handleSignup(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+    }
+
+    // Here you would typically send a request to your server to create a new user
+    console.log('Signup attempt:', { name, email, password });
+
+    // For demonstration purposes, we'll just log the user in
+    alert('Signup successful!');
+    // Redirect to home page or dashboard
+    window.location.href = 'index.html';
+}
