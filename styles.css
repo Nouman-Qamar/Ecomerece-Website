@@ -1,5 +1,6 @@
 
 
+/* Existing CSS code... */
 
 /* About Us Page Styles */
 .about-us-page {
@@ -203,7 +204,7 @@
     margin: 0 auto;
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
-
+}
 .contact-content {
     flex: 1;
     padding: 50px;
@@ -238,7 +239,7 @@
     backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px); 
     color: #ffffff; 
-
+}
 .form-group {
     margin-bottom: 20px;
 }
@@ -288,9 +289,6 @@
         padding: 30px;
     }
 }
-
-
-
 /* Cart Page Styles */
 .cart-page {
     padding: 60px 0;
@@ -1185,3 +1183,28 @@ footer {
     background-color: #e64a19;
 }
 
+
+/* background image of contact one side */
+
+.contact-info {
+    background-image: url('contactside.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff; /* Text color for better readability */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.contact-info h2, 
+.contact-info p, 
+.contact-info a {
+    color: #fff; /* Ensure text and links are readable */
+}
+
+.social-icons a {
+    color: #fff; /* Ensure icons are visible against the background */
+}
+
+.contact-info .info-item {
+    margin-bottom: 15px; /* Adds space between items */
+}
