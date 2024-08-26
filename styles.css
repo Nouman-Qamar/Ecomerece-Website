@@ -986,6 +986,168 @@ footer {
 }
 
 
+/* about page */
+
+.company-intro {
+    background-image: url('about.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.company-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.company-intro .container {
+    position: relative;
+    z-index: 1;
+}
+
+.company-intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.company-intro p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.company-details {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.company-overview {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.company-overview h2 {
+    color: #0056b3;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.company-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.value-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card i {
+    font-size: 3rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    color: #0056b3;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.value-card p, .value-card ul {
+    color: #555;
+}
+
+.value-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.value-card li {
+    margin-bottom: 0.5rem;
+}
+
+.company-team {
+    text-align: center;
+}
+
+.company-team h2 {
+    color: #0056b3;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-card h4 {
+    color: #0056b3;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .company-intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .company-intro p {
+        font-size: 1.2rem;
+    }
+
+    .company-overview h2 {
+        font-size: 2rem;
+    }
+
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
 
 /* background video styles */
 .hero {
