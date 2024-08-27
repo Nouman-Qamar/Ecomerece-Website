@@ -4,44 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Mega-Mart Online | Wide Range of Quality Items</title>
-    <meta name="description" content="Explore Mega-Mart Online's extensive collection of products. From clothing and accessories to footwear, find everything you need at great prices. Shop now!">
-    <meta name="keywords" content="Mega-Mart Online, products, clothing, accessories, footwear, online shopping">
+    <meta name="description" content="Explore Mega-Mart Online's extensive collection of products. From tech gadgets to jewelry, find everything you need at great prices. Shop now!">
+    <meta name="keywords" content="Mega-Mart Online, products, tech, jewelry, online shopping">
     <link rel="canonical" href="https://www.megamartonline.com/products.html">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Products - Mega-Mart Online | Wide Range of Quality Items">
-    <meta property="og:description" content="Explore Mega-Mart Online's extensive collection of products. From clothing and accessories to footwear, find everything you need at great prices.">
+    <meta property="og:description" content="Explore Mega-Mart Online's extensive collection of products. From tech gadgets to jewelry, find everything you need at great prices.">
     <meta property="og:image" content="https://www.megamartonline.com/images/products-banner.jpg">
     <meta property="og:url" content="https://www.megamartonline.com/products.html">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Clothing",
-          "url": "https://www.megamartonline.com/products.html#clothing"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Accessories",
-          "url": "https://www.megamartonline.com/products.html#accessories"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Footwear",
-          "url": "https://www.megamartonline.com/products.html#footwear"
-        }
-      ]
-    }
-    </script>
 </head>
 <body>
     <header>
@@ -56,17 +30,16 @@
         </div>
         <nav class="main-nav">
             <div class="container">
-                <div class="logo">Mega-Mart Trends</div>
+                <div class="logo">Mega-Mart Online</div>
                 <div class="search-bar">
                     <input type="text" placeholder="Find your perfect match">
                     <button><i class="fas fa-search"></i></button>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    
                 </ul>
             </div>
         </nav>
@@ -78,24 +51,62 @@
                 <h1>Our Products</h1>
                 <div class="product-filters">
                     <button class="filter-btn active" data-filter="all">All Products</button>
-                    <button class="filter-btn" data-filter="clothing">Clothing</button>
-                    <button class="filter-btn" data-filter="accessories">Accessories</button>
-                    <button class="filter-btn" data-filter="footwear">Footwear</button>
+                    <button class="filter-btn" data-filter="tech">Tech</button>
+                    <button class="filter-btn" data-filter="jewelry">Jewelry</button>
                 </div>
                 <div class="product-grid" id="productGrid">
-                    <!-- Product items will be dynamically added here -->
+                    <!-- Tech Products -->
+                    <div class="product-item" data-category="tech">
+                        <div class="product-image">
+                            <img src="tech1.png" alt="Smartphone X200">
+                        </div>
+                        <div class="product-info">
+                            <h3>Smartphone X200</h3>
+                            <p class="price"><span class="old-price">$799.99</span> <span class="new-price">$699.99</span></p>
+                            <button onclick="addToCart(1, 'Smartphone X200', 699.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-item" data-category="tech">
+                        <div class="product-image">
+                            <img src="tech2.png" alt="Noise-Cancelling Headphones">
+                        </div>
+                        <div class="product-info">
+                            <h3>Noise-Cancelling Headphones</h3>
+                            <p class="price"><span class="old-price">$299.99</span> <span class="new-price">$249.99</span></p>
+                            <button onclick="addToCart(2, 'Noise-Cancelling Headphones', 249.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Jewelry Products -->
+                    <div class="product-item" data-category="jewelry">
+                        <div class="product-image">
+                            <img src="jewelry1.png" alt="Gold Plated Necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>Gold Plated Necklace</h3>
+                            <p class="price"><span class="old-price">$199.99</span> <span class="new-price">$149.99</span></p>
+                            <button onclick="addToCart(3, 'Gold Plated Necklace', 149.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-item" data-category="jewelry">
+                        <div class="product-image">
+                            <img src="jewelry2.png" alt="Diamond Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>Diamond Earrings</h3>
+                            <p class="price"><span class="old-price">$899.99</span> <span class="new-price">$799.99</span></p>
+                            <button onclick="addToCart(4, 'Diamond Earrings', 799.99)">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-    
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>MegaMart Online Trends</h3>
-                    <p>Your one-stop shop for beach-inspired fashion and accessories.</p>
+                    <h3>Mega-Mart Online</h3>
+                    <p>Your one-stop shop for tech and jewelry.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -130,6 +141,7 @@
         </div>
     </footer>
 
+    
     <script src="script.js"></script>
 </body>
 </html>
